@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculadora">
+        <input type="text" id="display" readonly>
+        <table>
+            <tr>
+                <td><button onclick="appendToDisplay('(')">(</button></td>
+                <td><button onclick="appendToDisplay(')')">)</button></td>
+                <td><button onclick="clearDisplay()">C</button></td>
+                <td><button onclick="appendToDisplay('/')">/</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="appendToDisplay('7')">7</button></td>
+                <td><button onclick="appendToDisplay('8')">8</button></td>
+                <td><button onclick="appendToDisplay('9')">9</button></td>
+                <td><button onclick="appendToDisplay('*')">*</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="appendToDisplay('4')">4</button></td>
+                <td><button onclick="appendToDisplay('5')">5</button></td>
+                <td><button onclick="appendToDisplay('6')">6</button></td>
+                <td><button onclick="appendToDisplay('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="appendToDisplay('1')">1</button></td>
+                <td><button onclick="appendToDisplay('2')">2</button></td>
+                <td><button onclick="appendToDisplay('3')">3</button></td>
+                <td><button onclick="appendToDisplay('+')">+</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="appendToDisplay('0')">0</button></td>
+                <td><button onclick="appendToDisplay('.')">.</button></td>
+                <td><button onclick="calculate()">=</button></td>
+                <td><button onclick="calculatePercentage()">%</button></td>
+
+            </tr>
+            <tr>
+                <td colspan="4"><button onclick="calculateSquareRoot()">√</button></td>
+                
+            </tr>
+            <tr>
+            <td colspan="4"><button onclick="calculatePower()">^</button></td>
+            </tr>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
