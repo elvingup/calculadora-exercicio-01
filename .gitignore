@@ -1,0 +1,25 @@
+### PHP ###
+*.php.swp
+*.php~
+# (phpstorm's files)
+.idea/
+
+### Visual Studio Code ###
+.vscode/
+*.code-workspace
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos de log
+*.log
+
+# Dependências do Composer
+vendor/
+
+# Arquivos de configuração locais
+.env
+
+# Outros arquivos temporários
+*.tmp
